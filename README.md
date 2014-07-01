@@ -1,4 +1,3 @@
-emacs
-=====
+* My emacs config
 
-My emacs init
+I make games, using Emacs and Unity :D
