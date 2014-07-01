@@ -1,2 +1,7 @@
 # Compiled
 *.elc
+elpa/
+auto-save-list/
+projectile.cache
+init.el~
+server/server
