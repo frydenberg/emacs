@@ -207,3 +207,7 @@
 
 ;;Disable cursor blink
 (blink-cursor-mode 0)
+
+;;Automaticly refresh buffer if file has changed on disc.
+;;Since we might change files in a Unity project from outside emacs, this is very usefull.
+(global-auto-revert-mode 1)
