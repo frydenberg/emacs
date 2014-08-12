@@ -211,3 +211,23 @@
 ;;Automaticly refresh buffer if file has changed on disc.
 ;;Since we might change files in a Unity project from outside emacs, this is very usefull.
 (global-auto-revert-mode 1)
+
+;;The standard comment function was never helpful :(
+;;This taken from http://www.emacswiki.org/emacs/CommentingCode
+;;is so much better!!!
+(defun comment-eclipse ()
+  (interactive)
+  (let ((start (line-beginning-position))
+        (end (line-end-position)))
+    (when (or (not transient-mark-mode) (region-active-p))
+      (setq start (save-excursion
+                    (goto-char (region-beginning))
+                    (beginning-of-line)
+                    (point))
+            end (save-excursion
+                  (goto-char (region-end))
+                  (end-of-line)
+                  (point))))
+    (comment-or-uncomment-region start end)))
+
+(global-set-key "\M-;" 'comment-eclipse)
