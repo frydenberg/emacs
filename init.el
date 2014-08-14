@@ -229,3 +229,9 @@
     (comment-or-uncomment-region start end)))
 
 (global-set-key "\M-;" 'comment-eclipse)
+
+;;Flycheck stuff
+(global-flycheck-mode)
+(require 'flycheck-tip)
+;;Show flycheck errors in a popup instead of echo area
+(flycheck-tip-use-timer 'verbose)
