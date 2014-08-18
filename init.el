@@ -10,7 +10,6 @@
  '(company-idle-delay 0.1)
  '(cua-mode t nil (cua-base))
  '(dired-dwim-target t)
- '(display-battery-mode t)
  '(erc-hide-list (quote ("JOIN" "KICK" "PART" "QUIT")))
  '(flycheck-csharp-omnisharp-curl-executable "curl")
  '(font-lock-global-modes (quote (not speedbar-mode)))
@@ -34,7 +33,7 @@
 
 
 ;;Modify the exec-path
-(setq exec-path (append exec-path '("c:/Repositories/OmniSharpServer/OmniSharp/bin/Debug/" "C:/Program Files (x86)/Everything/es/" "C:/Tools/curl_736_0_ssh2_ssl")))
+;;(setq exec-path (append exec-path '("c:/Repositories/OmniSharpServer/OmniSharp/bin/Debug/" "C:/Program Files (x86)/Everything/es/" "C:/Tools/curl_736_0_ssh2_ssl")))
 
 (setq mouse-wheel-scroll-amount '(4 ((shift) . 1) ((control) . nil))) 
 (setq mouse-wheel-progressive-speed nil)
