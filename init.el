@@ -235,3 +235,10 @@
 (require 'flycheck-tip)
 ;;Show flycheck errors in a popup instead of echo area
 (flycheck-tip-use-timer 'verbose)
+
+ 
+;;Drag stuff around
+;;Drags line up or down
+;;Drags words back and forth
+(require 'drag-stuff)
+(drag-stuff-global-mode t)
