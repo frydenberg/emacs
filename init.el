@@ -10,7 +10,6 @@
  '(company-idle-delay 0.1)
  '(cua-mode t nil (cua-base))
  '(dired-dwim-target t)
- '(display-battery-mode t)
  '(erc-hide-list (quote ("JOIN" "KICK" "PART" "QUIT")))
  '(flycheck-csharp-omnisharp-curl-executable "curl")
  '(font-lock-global-modes (quote (not speedbar-mode)))
