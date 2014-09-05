@@ -241,3 +241,7 @@
 ;;Drags words back and forth
 (require 'drag-stuff)
 (drag-stuff-global-mode t)
+
+;;Set the home variable
+(when (string-equal system-type "windows-nt")
+  (setenv "HOME" (concat (getenv "HOMEDRIVE") (getenv "HOMEPATH"))))
