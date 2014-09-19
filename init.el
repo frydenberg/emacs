@@ -17,6 +17,7 @@
  '(global-company-mode t)
  '(magit-git-executable "git.exe")
  '(max-specpdl-size 3000)
+ '(newsticker-url-list (quote (("Reddit Emacs" "http://www.reddit.com/r/emacs/.rss" nil nil nil))))
  '(omnisharp-timeout 1)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -242,6 +243,3 @@
 (require 'drag-stuff)
 (drag-stuff-global-mode t)
 
-;;Set the home variable
-(when (string-equal system-type "windows-nt")
-  (setenv "HOME" (concat (getenv "HOMEDRIVE") (getenv "HOMEPATH"))))
