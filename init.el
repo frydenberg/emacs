@@ -243,3 +243,6 @@
 (require 'drag-stuff)
 (drag-stuff-global-mode t)
 
+
+;;Show erc notifications in modeline
+(setq erc-track-position-in-mode-line t)
