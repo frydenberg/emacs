@@ -246,3 +246,10 @@
 
 ;;Show erc notifications in modeline
 (setq erc-track-position-in-mode-line t)
+
+
+(require 'zeal-at-point)
+(global-set-key "\C-cd" 'zeal-at-point)
+
+(provide 'init)
+;;; init.el ends here
