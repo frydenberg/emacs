@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: tooltip
+# key: tooltip
+# binding: direct-keybinding
+# --
+[Tooltip("$1")]

@@ -32,6 +32,11 @@
  )
 
 
+;; Load Packages
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+(require 'pallet)
+(pallet-mode t)
 
 
 (setq mouse-wheel-scroll-amount '(4 ((shift) . 1) ((control) . nil))) 
@@ -39,24 +44,28 @@
 (global-set-key [f5] 'compile)
 
 ;;package handling
-(require 'package)
+;;(require 'package)
 ;;;adding the melpa archive
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;(add-to-list 'package-archives
+;;	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;;;Adding marmalade repo !This rep is often not working, making emacs hang on boot and list-package
 ;; (add-to-list 'package-archives 
 ;;     '("marmalade" .
 ;;       "http://marmalade-repo.org/packages/"))
 ;;init package manager
-(package-initialize)
+;;(package-initialize)
 ;;refresh the list of packages
-(package-refresh-contents)
+;;(package-refresh-contents)
 
 
 ;company mode
 (add-hook 'after-init-hook 'global-company-mode)
 (global-set-key [C-tab] 'company-complete)
 (setq company-idle-delay 0.1)
+;Enable line numbers in the completion buffer
+(setq company-show-numbers 1)
+
+
 
 ;load ace jump when used.
 (autoload
@@ -250,6 +259,8 @@
 
 (require 'zeal-at-point)
 (global-set-key "\C-cd" 'zeal-at-point)
+
+
 
 (provide 'init)
 ;;; init.el ends here
